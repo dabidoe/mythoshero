@@ -8,6 +8,7 @@ import Home from "@/pages/home";
 import CharacterPage from "@/pages/character";
 import Forge from "@/pages/forge";
 import Pricing from "@/pages/pricing";
+import AssetsPage from "@/pages/assets";
 import Navbar from "@/components/Navbar";
 
 function Router() {
@@ -16,6 +17,7 @@ function Router() {
       <Navbar />
       <Switch>
         <Route path="/" component={Home} />
+        <Route path="/assets" component={AssetsPage} />
         <Route path="/forge" component={Forge} />
         <Route path="/pricing" component={Pricing} />
         <Route path="/character/:id" component={CharacterPage} />
