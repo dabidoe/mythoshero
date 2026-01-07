@@ -1,0 +1,14 @@
+{
+  "characterName": "Garrukh the Savage",
+  "race": "Lizardfolk",
+  "class": "Barbarian",
+  "level": 10,
+  "stats": {
+    "STR": 20,
+    "DEX": 14,
+    "CON": 18,
+    "INT": 10,
+    "WIS": 12,
+    "CHA": 8
+  }
+}

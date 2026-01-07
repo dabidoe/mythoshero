@@ -8,16 +8,20 @@ import Home from "@/pages/home";
 import CharacterPage from "@/pages/character";
 import Forge from "@/pages/forge";
 import Pricing from "@/pages/pricing";
+import Navbar from "@/components/Navbar";
 
 function Router() {
   return (
-    <Switch>
-      <Route path="/" component={Home} />
-      <Route path="/forge" component={Forge} />
-      <Route path="/pricing" component={Pricing} />
-      <Route path="/character/:id" component={CharacterPage} />
-      <Route component={NotFound} />
-    </Switch>
+    <>
+      <Navbar />
+      <Switch>
+        <Route path="/" component={Home} />
+        <Route path="/forge" component={Forge} />
+        <Route path="/pricing" component={Pricing} />
+        <Route path="/character/:id" component={CharacterPage} />
+        <Route component={NotFound} />
+      </Switch>
+    </>
   );
 }
 

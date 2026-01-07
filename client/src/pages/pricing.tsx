@@ -16,7 +16,15 @@ const plans = [
     name: 'Hero',
     price: '$19',
     description: 'The sweet spot for active GMs and world builders.',
-    features: ['Unlimited Forges', '4K Resolution Assets', 'VTT Export Integration', 'Private Asset Vault', 'Priority Support'],
+    features: [
+      'Unlimited Forges', 
+      '4K Resolution Assets', 
+      'VTT Export Integration', 
+      'Private Asset Vault', 
+      'Priority Support',
+      'Advanced Layer Editing',
+      'Tokens for Asset Purchase'
+    ],
     icon: <Zap className="text-cyan-400" />,
     button: 'Forge Your Hero',
     popular: true
@@ -25,7 +33,14 @@ const plans = [
     name: 'Legend',
     price: '$49',
     description: 'For professional creators and publishing studios.',
-    features: ['Batch Forging', '8K Cinematic Exports', 'Custom Model Training', 'API Access', 'White-Label Branding'],
+    features: [
+      'Batch Forging', 
+      '8K Cinematic Exports', 
+      'Custom Model Training', 
+      'API Access', 
+      'Full Commercial Rights',
+      'Maximum Monthly Tokens'
+    ],
     icon: <Crown className="text-yellow-500" />,
     button: 'Become a Legend',
     popular: false
