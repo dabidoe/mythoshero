@@ -1,0 +1,60 @@
+import React from 'react';
+
+const assets = [
+  { id: 1, name: 'Sir Kealen', type: 'Hero', rarity: 'Legendary', img: '/kealen.jpg' },
+  { id: 2, name: 'Shadow Weaver', type: 'Mage', rarity: 'Epic', img: '/shadow.jpg' },
+  { id: 3, name: 'The Iron Oath', type: 'Artifact', rarity: 'Rare', img: '/sword.jpg' },
+  { id: 4, name: 'Grimwood Pass', type: 'Setting', rarity: 'Uncommon', img: '/forest.jpg' },
+];
+
+const AssetGallery = () => {
+  return (
+    <section className="bg-[#0a0a0a] py-20 px-6">
+      <div className="max-w-7xl mx-auto">
+        <div className="flex justify-between items-end mb-12">
+          <div>
+            <h2 className="text-4xl font-bold text-white mb-2">The Asset Vault</h2>
+            <p className="text-gray-400">Cinematic story building blocks for your next quest.</p>
+          </div>
+          <button className="text-cyan-500 font-semibold hover:underline text-sm uppercase tracking-widest">
+            Browse All Assets →
+          </button>
+        </div>
+
+        {/* The Netflix-Style Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {assets.map((asset) => (
+            <div key={asset.id} className="group relative bg-[#121212] border border-white/5 rounded-xl overflow-hidden hover:border-cyan-500/50 transition-all duration-300">
+              {/* Aspect Ratio Box for consistent "Netflix Card" look */}
+              <div className="aspect-[2/3] relative overflow-hidden">
+                <img 
+                  src={asset.img} 
+                  alt={asset.name} 
+                  className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                />
+                {/* Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#121212] via-transparent to-transparent opacity-90"></div>
+                
+                {/* Badge */}
+                <span className="absolute top-4 left-4 bg-black/60 backdrop-blur-md text-[10px] text-cyan-400 font-bold px-2 py-1 rounded border border-cyan-400/30">
+                  {asset.rarity}
+                </span>
+              </div>
+
+              {/* Card Details */}
+              <div className="p-5">
+                <p className="text-[10px] text-gray-500 uppercase tracking-widest mb-1">{asset.type}</p>
+                <h3 className="text-xl font-bold text-white">{asset.name}</h3>
+                <button className="mt-4 w-full py-2 bg-white/5 hover:bg-white/10 text-white text-xs font-bold rounded transition">
+                  View Details
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default AssetGallery;

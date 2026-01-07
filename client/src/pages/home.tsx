@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import characterImage from '@assets/generated_images/cinematic_fantasy_knight_character_portrait.png';
+import AssetGallery from '@/components/AssetGallery';
 
 export default function Home() {
   return (
@@ -111,6 +112,8 @@ export default function Home() {
           </div>
         </motion.div>
       </main>
+
+      <AssetGallery />
 
       {/* Footer / Brands */}
       <footer className="border-t border-white/5 py-12">
