@@ -1,14 +1,66 @@
 {
-  "characterName": "Garrukh the Savage",
-  "race": "Lizardfolk",
-  "class": "Barbarian",
-  "level": 10,
-  "stats": {
-    "STR": 20,
-    "DEX": 14,
-    "CON": 18,
-    "INT": 10,
-    "WIS": 12,
-    "CHA": 8
-  }
+  "characters": [
+    {
+      "guid": "26257c7a-f526-4f08-bd97-41929813361d",
+      "characterName": "Garrukh the Savage",
+      "characterClass": "Barbarian",
+      "race": "Lizardfolk",
+      "level": 10,
+      "characterType": "HERO",
+      "stats": {
+        "STR": 20,
+        "DEX": 14,
+        "CON": 18,
+        "INT": 10,
+        "WIS": 12,
+        "CHA": 8
+      },
+      "profilePicture": "garrukh_the_savage_lizardfolk_barbarian_portrait.png"
+    },
+    {
+      "guid": "npc-001",
+      "characterName": "Void Stalker",
+      "characterClass": "Creature",
+      "race": "Aberration",
+      "level": 12,
+      "characterType": "NPC",
+      "stats": {
+        "STR": 18,
+        "DEX": 22,
+        "CON": 16,
+        "INT": 8,
+        "WIS": 14,
+        "CHA": 6
+      },
+      "profilePicture": "shadow_weaver_mage_portrait.png"
+    },
+    {
+      "guid": "boss-001",
+      "characterName": "The Iron Oath Arbiter",
+      "characterClass": "Boss",
+      "race": "Construct",
+      "level": 20,
+      "characterType": "Boss",
+      "stats": {
+        "STR": 25,
+        "DEX": 10,
+        "CON": 22,
+        "INT": 12,
+        "WIS": 10,
+        "CHA": 10
+      },
+      "profilePicture": "cinematic_fantasy_knight_character_portrait.png"
+    }
+  ],
+  "artifacts": [
+    {
+      "guid": "art-001",
+      "characterName": "The Iron Oath",
+      "characterClass": "Artifact",
+      "race": "Relic",
+      "level": 0,
+      "stats": { "STR": 0, "DEX": 0, "CON": 0, "INT": 0, "WIS": 0, "CHA": 0 },
+      "profilePicture": "the_iron_oath_artifact_sword.png"
+    }
+  ]
 }
