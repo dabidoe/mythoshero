@@ -21,11 +21,11 @@ const Navbar = () => {
         <div className="hidden md:flex items-center space-x-8">
           {links.map((link) => (
             <Link key={link.name} href={link.href}>
-              <a className={`text-sm uppercase tracking-widest font-medium transition-colors duration-300 ${
+              <span className={`text-sm uppercase tracking-widest font-medium transition-colors duration-300 cursor-pointer ${
                 location === link.href ? 'text-cyan-400' : 'text-gray-400 hover:text-white'
               }`}>
                 {link.name}
-              </a>
+              </span>
             </Link>
           ))}
           <button className="bg-white text-black px-6 py-2 rounded-full font-bold hover:bg-cyan-400 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.2)]">

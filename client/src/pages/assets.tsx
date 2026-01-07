@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Search, Filter, Grid, List, Download, ExternalLink } from 'lucide-react';
+import { Search, Filter, Grid, List, Download, ExternalLink, Zap } from 'lucide-react';
 import AssetGallery from '@/components/AssetGallery';
 import bgTexture from '@assets/generated_images/mythos_asset_library_background_texture.png';
 
