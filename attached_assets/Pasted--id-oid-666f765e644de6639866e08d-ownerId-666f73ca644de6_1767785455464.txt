@@ -1,0 +1,474 @@
+{
+  "_id": {
+    "$oid": "666f765e644de6639866e08d"
+  },
+  "ownerId": "666f73ca644de6639866a357",
+  "originalOwnerId": "666f73ca644de6639866a357",
+  "guid": "26257c7a-f526-4f08-bd97-41929813361d",
+  "characterName": "Garrukh the Savage",
+  "characterClass": "Barbarian",
+  "race": "Lizardfolk",
+  "level": 10,
+  "hp": 100,
+  "ac": 15,
+  "tokenState": {
+    "chain": "",
+    "tokenId": "",
+    "tokenMintUserId": "",
+    "tokenAddress": "",
+    "listRoyaltyValue": "",
+    "listPriceValue": "",
+    "listPriceType": "",
+    "listTime": {
+      "$date": "1970-01-01T00:00:00.000Z"
+    },
+    "tokenMintedAt": {
+      "$date": "1970-01-01T00:00:00.000Z"
+    },
+    "isSafeListedAccount": false,
+    "state": ""
+  },
+  "container": {
+    "stats": [
+      {
+        "key": "cc213993-4b98-478d-833c-d8701c8b7fb8",
+        "value": "{key:'Str',value:'20 (+5)',guid:'cc213993-4b98-478d-833c-d8701c8b7fb8'}",
+        "_id": {
+          "$oid": "666f9340644de663986958f2"
+        }
+      },
+      {
+        "key": "2d717a6e-3e8b-41c0-bf66-741c89d988d5",
+        "value": "{key:'Dex',value:'14 (+2)',guid:'2d717a6e-3e8b-41c0-bf66-741c89d988d5'}",
+        "_id": {
+          "$oid": "666f9340644de663986958f3"
+        }
+      },
+      {
+        "key": "ea4616bf-b102-4fad-92e3-da003e899a20",
+        "value": "{key:'Con',value:'18 (+4)',guid:'ea4616bf-b102-4fad-92e3-da003e899a20'}",
+        "_id": {
+          "$oid": "666f9340644de663986958f4"
+        }
+      },
+      {
+        "key": "0ab772ba-3c79-4cac-a9b3-731ff7d5d5c1",
+        "value": "{key:'Int',value:'10 (0)',guid:'0ab772ba-3c79-4cac-a9b3-731ff7d5d5c1'}",
+        "_id": {
+          "$oid": "666f9340644de663986958f5"
+        }
+      },
+      {
+        "key": "179c60d4-b050-40f6-b623-84abbee6fb51",
+        "value": "{key:'Wis',value:'12 (+1)',guid:'179c60d4-b050-40f6-b623-84abbee6fb51'}",
+        "_id": {
+          "$oid": "666f9340644de663986958f6"
+        }
+      },
+      {
+        "key": "2ad13b22-c88c-44c8-9f60-5caca75b52d1",
+        "value": "{key:'Cha',value:'8 (-1)',guid:'2ad13b22-c88c-44c8-9f60-5caca75b52d1'}",
+        "_id": {
+          "$oid": "666f9340644de663986958f7"
+        }
+      }
+    ],
+    "skills": [
+      {
+        "key": "ba182048-b795-4cc4-be37-e8371ba87cbe",
+        "value": "{key:'Intimidation',value:'+3',guid:'ba182048-b795-4cc4-be37-e8371ba87cbe'}",
+        "_id": {
+          "$oid": "666f9340644de663986958f8"
+        }
+      },
+      {
+        "key": "37c45af2-b53e-4765-ac76-ee9117f24c07",
+        "value": "{key:'Survival',value:'+4',guid:'37c45af2-b53e-4765-ac76-ee9117f24c07'}",
+        "_id": {
+          "$oid": "666f9340644de663986958f9"
+        }
+      },
+      {
+        "key": "6fb58458-eccc-4e80-8608-c8764ecb3a1c",
+        "value": "{key:'Athletics',value:'+9',guid:'6fb58458-eccc-4e80-8608-c8764ecb3a1c'}",
+        "_id": {
+          "$oid": "666f9340644de663986958fa"
+        }
+      },
+      {
+        "key": "68289b9e-3b6a-4270-919e-190ad41bfcc7",
+        "value": "{key:'Perception',value:'+4',guid:'68289b9e-3b6a-4270-919e-190ad41bfcc7'}",
+        "_id": {
+          "$oid": "666f9340644de663986958fb"
+        }
+      },
+      {
+        "key": "04cd3a02-f29b-4c1e-8bbf-4ad2a7e920e6",
+        "value": "{key:'Nature',value:'+2',guid:'04cd3a02-f29b-4c1e-8bbf-4ad2a7e920e6'}",
+        "_id": {
+          "$oid": "666f9340644de663986958fc"
+        }
+      }
+    ],
+    "saving_throws": [
+      {
+        "key": "243e7389-e018-4f22-9112-f98b5675941c",
+        "value": "{key:'Armor Class',value:15,guid:'243e7389-e018-4f22-9112-f98b5675941c'}",
+        "_id": {
+          "$oid": "666f9340644de663986958fd"
+        }
+      },
+      {
+        "key": "87139946-046b-4a48-bc04-9799b9586eac",
+        "value": "{key:'Initiative',value:'+2',guid:'87139946-046b-4a48-bc04-9799b9586eac'}",
+        "_id": {
+          "$oid": "666f9340644de663986958fe"
+        }
+      },
+      {
+        "key": "1cd742be-b62d-4430-b177-1dc23314ca57",
+        "value": "{key:'Speed',value:'30ft',guid:'1cd742be-b62d-4430-b177-1dc23314ca57'}",
+        "_id": {
+          "$oid": "666f9340644de663986958ff"
+        }
+      },
+      {
+        "key": "6e2d6228-0c81-4eab-b518-58fed140a7b1",
+        "value": "{key:'Current HP',value:135,guid:'6e2d6228-0c81-4eab-b518-58fed140a7b1'}",
+        "_id": {
+          "$oid": "666f9340644de66398695900"
+        }
+      },
+      {
+        "key": "77a481ca-9673-4be6-8bdc-cca169442496",
+        "value": "{key:'Proficiency',value:'+4',guid:'77a481ca-9673-4be6-8bdc-cca169442496'}",
+        "_id": {
+          "$oid": "666f9340644de66398695901"
+        }
+      }
+    ],
+    "combat_data": [
+      {
+        "key": "98edbff6-3369-412d-847e-4eced1a7c0f8",
+        "value": "{key:'Str',value:'20 (+5)',guid:'98edbff6-3369-412d-847e-4eced1a7c0f8'}",
+        "_id": {
+          "$oid": "666f9340644de66398695902"
+        }
+      },
+      {
+        "key": "1db40e53-551e-465a-a28f-1f6602af1994",
+        "value": "{key:'Dex',value:'14 (+2)',guid:'1db40e53-551e-465a-a28f-1f6602af1994'}",
+        "_id": {
+          "$oid": "666f9340644de66398695903"
+        }
+      },
+      {
+        "key": "9f2156fe-96f2-4eb8-af4d-204c7f320cdb",
+        "value": "{key:'Con',value:'18 (+4)',guid:'9f2156fe-96f2-4eb8-af4d-204c7f320cdb'}",
+        "_id": {
+          "$oid": "666f9340644de66398695904"
+        }
+      },
+      {
+        "key": "2069bd9e-4752-4a84-90d0-496da0728885",
+        "value": "{key:'Int',value:'10 (0)',guid:'2069bd9e-4752-4a84-90d0-496da0728885'}",
+        "_id": {
+          "$oid": "666f9340644de66398695905"
+        }
+      },
+      {
+        "key": "9a0a0647-b272-41b7-9af9-98a0926d8eba",
+        "value": "{key:'Wis',value:'12 (+1)',guid:'9a0a0647-b272-41b7-9af9-98a0926d8eba'}",
+        "_id": {
+          "$oid": "666f9340644de66398695906"
+        }
+      },
+      {
+        "key": "cf3186f0-b7d5-47aa-b052-339349f94229",
+        "value": "{key:'Cha',value:'8 (-1)',guid:'cf3186f0-b7d5-47aa-b052-339349f94229'}",
+        "_id": {
+          "$oid": "666f9340644de66398695907"
+        }
+      }
+    ],
+    "labels": [
+      {
+        "key": "e8cb6286-2caa-48c4-902b-78f8a2bd6230",
+        "value": "{key:'Class',value:'Barbarian',guid:'e8cb6286-2caa-48c4-902b-78f8a2bd6230'}",
+        "_id": {
+          "$oid": "666f9340644de66398695908"
+        }
+      },
+      {
+        "key": "028d4d38-8f33-4022-94c1-eed430edd6bb",
+        "value": "{key:'Level',value:10,guid:'028d4d38-8f33-4022-94c1-eed430edd6bb'}",
+        "_id": {
+          "$oid": "666f9340644de66398695909"
+        }
+      },
+      {
+        "key": "2eab27fc-33ec-4200-ac54-d0ac26350e2d",
+        "value": "{key:'EXP',value:'85,000',guid:'2eab27fc-33ec-4200-ac54-d0ac26350e2d'}",
+        "_id": {
+          "$oid": "666f9340644de6639869590a"
+        }
+      },
+      {
+        "key": "c3c22e87-d299-4f9f-88ab-43725bd54025",
+        "value": "{key:'Background',value:'Tribal Warrior',guid:'c3c22e87-d299-4f9f-88ab-43725bd54025'}",
+        "_id": {
+          "$oid": "666f9340644de6639869590b"
+        }
+      },
+      {
+        "key": "251be1be-5fd9-4eac-b0b1-de90cacc526d",
+        "value": "{key:'Race',value:'Lizardfolk',guid:'251be1be-5fd9-4eac-b0b1-de90cacc526d'}",
+        "_id": {
+          "$oid": "666f9340644de6639869590c"
+        }
+      },
+      {
+        "key": "25164131-708e-44ca-bc7c-89534360753a",
+        "value": "{key:'Age',value:'27',guid:'25164131-708e-44ca-bc7c-89534360753a'}",
+        "_id": {
+          "$oid": "666f9340644de6639869590d"
+        }
+      }
+    ],
+    "traits": [
+      {
+        "key": "ff36fd94-28ae-4dd8-ab93-a5ab9fff0c53",
+        "value": "{key:'Hungry Jaws',value:'In battle, you can throw yourself into a vicious feeding frenzy. As a bonus action, you can make a special attack with your bite. If it hits, it deals its normal damage and you gain temporary hit points (minimum of 1) equal to your Constitution modifier.',guid:'ff36fd94-28ae-4dd8-ab93-a5ab9fff0c53'}",
+        "_id": {
+          "$oid": "666f9340644de6639869590e"
+        }
+      },
+      {
+        "key": "e080b1c3-2200-4df2-98c3-d8939f50f179",
+        "value": "{\"key\":\"Hold Breath\",\"value\":\"You can hold your breath underwater for up to 15 minutes at a time.\",\"guid\":\"e080b1c3-2200-4df2-98c3-d8939f50f179\",\"ownerId\":null,\"originalOwnerId\":null,\"iconReference\":null,\"iconReference2\":null}",
+        "_id": {
+          "$oid": "666f9340644de6639869590f"
+        }
+      },
+      {
+        "key": "3ba67219-01eb-4267-98c5-3ee059d6e25b",
+        "value": "{key:'Natural Armor',value:'You have tough, scaly skin. When you aren’t wearing armor, your AC is 13 + your Dexterity modifier. A shield’s benefits apply as normal while you use your natural armor.',guid:'3ba67219-01eb-4267-98c5-3ee059d6e25b'}",
+        "_id": {
+          "$oid": "666f9340644de66398695910"
+        }
+      }
+    ],
+    "abilities": [
+      {
+        "key": "b7fde428-5d8a-481c-852c-a32657cb3042",
+        "value": "{key:'Rage',value:'3 times per day, enter a berserk state for 1 minute, gaining advantage on Strength checks and saving throws, plus a bonus to melee damage.',guid:'b7fde428-5d8a-481c-852c-a32657cb3042'}",
+        "_id": {
+          "$oid": "666f9340644de66398695911"
+        }
+      },
+      {
+        "key": "20fca1e7-179c-4464-9cb1-17e5909c9bc3",
+        "value": "{key:'Unarmored Defense',value:'When not wearing armor, AC equals 10 + Dex modifier + Con modifier.',guid:'20fca1e7-179c-4464-9cb1-17e5909c9bc3'}",
+        "_id": {
+          "$oid": "666f9340644de66398695912"
+        }
+      },
+      {
+        "key": "9c031366-a0be-4596-bd83-e14513461e92",
+        "value": "{key:'Reckless Attack',value:'Gain advantage on melee weapon attacks using Strength during your turn, but attack rolls against you have advantage until your next turn.',guid:'9c031366-a0be-4596-bd83-e14513461e92'}",
+        "_id": {
+          "$oid": "666f9340644de66398695913"
+        }
+      },
+      {
+        "key": "cc30c2c6-7faa-41b3-b627-deeea1d45979",
+        "value": "{key:'Menacing',value:'Once per long rest, use a bonus action to intimidate an enemy, causing them to become frightened for 1 minute on a failed Wisdom saving throw (DC 15).',guid:'cc30c2c6-7faa-41b3-b627-deeea1d45979'}",
+        "_id": {
+          "$oid": "666f9340644de66398695914"
+        }
+      },
+      {
+        "key": "5774b4e1-1044-481e-837b-6ff93af18095",
+        "value": "{key:'Frenzy',value:'While raging, you can make a single melee weapon attack as a bonus action on each of your turns.',guid:'5774b4e1-1044-481e-837b-6ff93af18095'}",
+        "_id": {
+          "$oid": "666f9340644de66398695915"
+        }
+      }
+    ],
+    "additional_details": [
+      {
+        "key": "cc479d21-5644-4b62-940a-01edaca7e429",
+        "value": "{key:'Senses',value:'Darkvision 60 ft.',guid:'cc479d21-5644-4b62-940a-01edaca7e429'}",
+        "_id": {
+          "$oid": "666f9340644de66398695916"
+        }
+      },
+      {
+        "key": "bff1b1f7-c4fe-4aeb-9114-ff0d6a2938e9",
+        "value": "{key:'Languages',value:'Common, Draconic',guid:'bff1b1f7-c4fe-4aeb-9114-ff0d6a2938e9'}",
+        "_id": {
+          "$oid": "666f9340644de66398695917"
+        }
+      },
+      {
+        "key": "05b38428-247d-40e0-887c-31c231ea7076",
+        "value": "{key:'Challenge',value:'10 (5,900 exp)',guid:'05b38428-247d-40e0-887c-31c231ea7076'}",
+        "_id": {
+          "$oid": "666f9340644de66398695918"
+        }
+      },
+      {
+        "key": "fbc58a5f-4cdb-4bdf-9c47-2e64d1c8290b",
+        "value": "{key:'Animal Handling',value:'+3',guid:'fbc58a5f-4cdb-4bdf-9c47-2e64d1c8290b'}",
+        "_id": {
+          "$oid": "666f9340644de66398695919"
+        }
+      }
+    ],
+    "inventory": [
+      {
+        "key": "3cdd5819-90a9-4d61-9305-63a6c7e3dc56",
+        "value": "ref",
+        "_id": {
+          "$oid": "666f9340644de6639869591a"
+        }
+      },
+      {
+        "key": "7307beda-105c-432c-8df5-c9dc5c641860",
+        "value": "ref",
+        "_id": {
+          "$oid": "666f9340644de6639869591b"
+        }
+      },
+      {
+        "key": "3e06dce1-00b6-4f08-b8d0-8f515ce73f4a",
+        "value": "ref",
+        "_id": {
+          "$oid": "666f9340644de6639869591c"
+        }
+      },
+      {
+        "key": "aefed1f6-8423-46b9-b8ba-575175d56a05",
+        "value": "ref",
+        "_id": {
+          "$oid": "666f9340644de6639869591d"
+        }
+      },
+      {
+        "key": "04bc4bc1-d25b-4988-84d7-2bd59629dce5",
+        "value": "ref",
+        "_id": {
+          "$oid": "666f9340644de6639869591e"
+        }
+      }
+    ],
+    "backstory": [
+      {
+        "key": "413fe77d-bfaa-4728-904e-fe1cd4ce43a2",
+        "value": "{\"leftImage\":false,\"rightImage\":true,\"key\":\"Key\",\"value\":\"Garrukh was born in the depths of the jungle, raised among tribal warriors who revered their reptilian heritage. Scarlet scales glistening in the sun, Garrukh honed his ferocity and raw power, aiming to protect his people from the encroaching threats of civilization. Known for his unbridled rage and immense strength, he carries an ancient greataxe passed down through generations, a symbol of his tribe's might and unwavering spirit.\",\"guid\":\"413fe77d-bfaa-4728-904e-fe1cd4ce43a2\",\"ownerId\":null,\"originalOwnerId\":null,\"iconReference\":null,\"iconReference2\":\"a8e8b2ceb4d32bd188e2d9a735e33f2a2a0f00087e921d993a033d346409e65d\",\"iconLayers\":[],\"iconLayers2\":[\"a8e8b2ceb4d32bd188e2d9a735e33f2a2a0f00087e921d993a033d346409e65d\"]}",
+        "_id": {
+          "$oid": "666f9340644de6639869591f"
+        }
+      }
+    ],
+    "statblock": [
+      {
+        "key": "120c6129-b8e5-4b6b-8c88-71af682700d8",
+        "value": "{headerText:'',category:'labels',referenceKeys:['e8cb6286-2caa-48c4-902b-78f8a2bd6230','028d4d38-8f33-4022-94c1-eed430edd6bb','2eab27fc-33ec-4200-ac54-d0ac26350e2d','c3c22e87-d299-4f9f-88ab-43725bd54025','251be1be-5fd9-4eac-b0b1-de90cacc526d','25164131-708e-44ca-bc7c-89534360753a'],style:0,constraintCount:0,showBackground:false,showSeparator:true,guid:'120c6129-b8e5-4b6b-8c88-71af682700d8',ownerId:null,originalOwnerId:null,iconReference:null,iconReference2:null}",
+        "_id": {
+          "$oid": "666f9340644de66398695920"
+        }
+      },
+      {
+        "key": "57f4edd0-db05-4558-a90e-26ad7ec0b754",
+        "value": "{headerText:'',category:'stats',referenceKeys:['cc213993-4b98-478d-833c-d8701c8b7fb8','2d717a6e-3e8b-41c0-bf66-741c89d988d5','ea4616bf-b102-4fad-92e3-da003e899a20','0ab772ba-3c79-4cac-a9b3-731ff7d5d5c1','179c60d4-b050-40f6-b623-84abbee6fb51','2ad13b22-c88c-44c8-9f60-5caca75b52d1'],style:0,constraintCount:0,showBackground:false,showSeparator:true,guid:'57f4edd0-db05-4558-a90e-26ad7ec0b754',ownerId:null,originalOwnerId:null,iconReference:null,iconReference2:null}",
+        "_id": {
+          "$oid": "666f9340644de66398695921"
+        }
+      },
+      {
+        "key": "eca40943-30cd-49ea-a7c8-2622bde3a0e6",
+        "value": "{headerText:'',category:'saving_throws',referenceKeys:['243e7389-e018-4f22-9112-f98b5675941c','87139946-046b-4a48-bc04-9799b9586eac','1cd742be-b62d-4430-b177-1dc23314ca57','6e2d6228-0c81-4eab-b518-58fed140a7b1','77a481ca-9673-4be6-8bdc-cca169442496'],style:0,constraintCount:0,showBackground:false,showSeparator:true,guid:'eca40943-30cd-49ea-a7c8-2622bde3a0e6',ownerId:null,originalOwnerId:null,iconReference:null,iconReference2:null}",
+        "_id": {
+          "$oid": "666f9340644de66398695922"
+        }
+      },
+      {
+        "key": "e1b1ba9d-9570-4be4-a9da-483eb426c247",
+        "value": "{headerText:'',category:'skills',referenceKeys:['ba182048-b795-4cc4-be37-e8371ba87cbe','37c45af2-b53e-4765-ac76-ee9117f24c07','6fb58458-eccc-4e80-8608-c8764ecb3a1c','68289b9e-3b6a-4270-919e-190ad41bfcc7','04cd3a02-f29b-4c1e-8bbf-4ad2a7e920e6'],style:0,constraintCount:0,showBackground:false,showSeparator:true,guid:'e1b1ba9d-9570-4be4-a9da-483eb426c247',ownerId:null,originalOwnerId:null,iconReference:null,iconReference2:null}",
+        "_id": {
+          "$oid": "666f9340644de66398695923"
+        }
+      },
+      {
+        "key": "525c8796-1398-487b-a1c2-48f0ad24fc22",
+        "value": "{headerText:'',category:'additional_details',referenceKeys:['cc479d21-5644-4b62-940a-01edaca7e429','bff1b1f7-c4fe-4aeb-9114-ff0d6a2938e9','05b38428-247d-40e0-887c-31c231ea7076','fbc58a5f-4cdb-4bdf-9c47-2e64d1c8290b','b6624177-f5df-4b48-a849-fdd865e54b20'],style:0,constraintCount:0,showBackground:false,showSeparator:true,guid:'525c8796-1398-487b-a1c2-48f0ad24fc22',ownerId:null,originalOwnerId:null,iconReference:null,iconReference2:null}",
+        "_id": {
+          "$oid": "666f9340644de66398695924"
+        }
+      },
+      {
+        "key": "834c65e9-cc1a-43d8-bb57-6b5cd59ea3c8",
+        "value": "{\"headerText\":\"Abilities\",\"category\":\"abilities\",\"referenceKeys\":[\"b7fde428-5d8a-481c-852c-a32657cb3042\",\"20fca1e7-179c-4464-9cb1-17e5909c9bc3\",\"9c031366-a0be-4596-bd83-e14513461e92\",\"cc30c2c6-7faa-41b3-b627-deeea1d45979\",\"5774b4e1-1044-481e-837b-6ff93af18095\"],\"style\":4,\"constraintCount\":0,\"showBackground\":false,\"showSeparator\":true,\"guid\":\"834c65e9-cc1a-43d8-bb57-6b5cd59ea3c8\",\"ownerId\":null,\"originalOwnerId\":null,\"iconReference\":null,\"iconReference2\":null}",
+        "_id": {
+          "$oid": "666f9340644de66398695925"
+        }
+      },
+      {
+        "key": "900ebce6-f7ce-4eb9-bbf7-ade907fd1840",
+        "value": "{\"headerText\":\"Traits\",\"category\":\"traits\",\"referenceKeys\":[\"ff36fd94-28ae-4dd8-ab93-a5ab9fff0c53\",\"e080b1c3-2200-4df2-98c3-d8939f50f179\",\"3ba67219-01eb-4267-98c5-3ee059d6e25b\"],\"style\":4,\"constraintCount\":0,\"showBackground\":false,\"showSeparator\":true,\"guid\":\"900ebce6-f7ce-4eb9-bbf7-ade907fd1840\",\"ownerId\":null,\"originalOwnerId\":null,\"iconReference\":null,\"iconReference2\":null}",
+        "_id": {
+          "$oid": "666f9340644de66398695926"
+        }
+      }
+    ],
+    "spells": [],
+    "spell_kvp": [],
+    "item_kvp": [
+      {
+        "key": "c8c7a924-9641-4a3a-86e9-fc6828312bff",
+        "value": "{\"key\":\"GP\",\"value\":\"100\",\"guid\":\"c8c7a924-9641-4a3a-86e9-fc6828312bff\",\"ownerId\":null,\"originalOwnerId\":null,\"iconReference\":null,\"iconReference2\":null}",
+        "_id": {
+          "$oid": "666f9340644de66398695927"
+        }
+      },
+      {
+        "key": "01d6abf0-121b-4f3e-ba3d-b7f0198bf231",
+        "value": "{\"key\":\"SP\",\"value\":\"50\",\"guid\":\"01d6abf0-121b-4f3e-ba3d-b7f0198bf231\",\"ownerId\":null,\"originalOwnerId\":null,\"iconReference\":null,\"iconReference2\":null}",
+        "_id": {
+          "$oid": "666f9340644de66398695928"
+        }
+      },
+      {
+        "key": "fa9b8ecd-2c29-4db9-a805-ffc4c797f251",
+        "value": "{\"key\":\"CP\",\"value\":\"25\",\"guid\":\"fa9b8ecd-2c29-4db9-a805-ffc4c797f251\",\"ownerId\":null,\"originalOwnerId\":null,\"iconReference\":null,\"iconReference2\":null}",
+        "_id": {
+          "$oid": "666f9340644de66398695929"
+        }
+      }
+    ]
+  },
+  "profilePicture": "f8782cc06f6696d9bef1d3a3ea1eb50d5282fb2013d1113d59ee723d526a564d",
+  "statblockPicture": "a90f4d23d899ca6636d18481dad1dda6eaffd7b9c610d92fef0239db0f1bf421",
+  "statblockBackground": "8a9fca8425862af9e38da4267e20ac174a97a9d2022fca8947236ce195284879",
+  "statblockBackgroundIndex": 0,
+  "attributes": "[]",
+  "createdAt": {
+    "$date": "2024-06-16T23:33:50.578Z"
+  },
+  "modifiedAt": {
+    "$date": "2024-11-22T17:52:21.324Z"
+  },
+  "__v": 1,
+  "statblockLayerConverted": true,
+  "statblockLayers": [
+    "8a9fca8425862af9e38da4267e20ac174a97a9d2022fca8947236ce195284879",
+    "a90f4d23d899ca6636d18481dad1dda6eaffd7b9c610d92fef0239db0f1bf421"
+  ],
+  "characterBackstory": "",
+  "characterGender": "",
+  "characterMood": "",
+  "characterPersonality": "",
+  "characterType": "Player",
+  "characterVoice": ""
+}
