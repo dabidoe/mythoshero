@@ -1,64 +1,44 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Search, Filter, Download, ExternalLink, Zap } from 'lucide-react';
+import { Search, Download, ExternalLink, Zap } from 'lucide-react';
 import { CharacterCard } from '@/components/CharacterCard';
 import bgTexture from '@assets/generated_images/mythos_asset_library_background_texture.png';
-import characterData from '@/character.json';
-import spellData from '@/spells.json';
-
-const CDN_BASE = "https://b-cdn.net/mythos/";
-
-interface Character {
-  guid: string;
-  characterName: string;
-  characterClass: string;
-  race: string;
-  level: number;
-  stats: {
-    STR: number;
-    DEX: number;
-    CON: number;
-    INT: number;
-    WIS: number;
-    CHA: number;
-  };
-  profilePicture?: string;
-  characterType?: string;
-  class?: string;
-}
+import characterData from '../../characters.json';
+import spellData from '../../spells.json';
 
 const AssetsPage = () => {
   const [category, setCategory] = useState('HEROES');
   const [search, setSearch] = useState('');
   const [isScanning, setIsScanning] = useState(false);
-  const [filteredData, setFilteredData] = useState<Character[]>([]);
+  const [filteredData, setFilteredData] = useState<any[]>([]);
 
   useEffect(() => {
     setIsScanning(true);
     const timer = setTimeout(() => {
-      let data: Character[] = [];
+      let data: any[] = [];
       if (category === 'HEROES') {
-        data = (characterData.characters as any[]).filter(c => c.level > 0 && c.characterType === 'HERO');
+        data = characterData.filter((c: any) => c.characterType !== "NPC" && c.level > 0);
       } else if (category === 'CREATURES') {
-        data = (characterData.characters as any[]).filter(c => c.characterType === 'NPC' || c.characterType === 'Boss');
+        data = characterData.filter((c: any) => c.characterType === "NPC" || c.level === 0);
       } else if (category === 'ARTIFACTS') {
-        data = (characterData.artifacts as any[]) || [];
+        // Keeping previous artifact logic if still needed, otherwise empty if not in new source
+        data = []; 
       } else if (category === 'SPELLS') {
-        data = spellData.map(s => ({
-          guid: s.name,
+        data = spellData.map((s: any) => ({
+          guid: s._id?.$oid || s.name,
           characterName: s.name,
-          characterClass: s.school,
+          characterClass: s.school || 'Spell',
           race: `Lvl ${s.level}`,
           level: s.level,
           stats: { STR: 0, DEX: 0, CON: 0, INT: 0, WIS: 0, CHA: 0 },
-          profilePicture: 'mythos_asset_library_background_texture.png',
-          characterType: 'SPELL'
+          profilePicture: s.icon || 'mythos_asset_library_background_texture.png',
+          class: s.school
         }));
       }
 
       if (search) {
         data = data.filter(item => 
-          item.characterName.toLowerCase().includes(search.toLowerCase())
+          (item.characterName || item.name || "").toLowerCase().includes(search.toLowerCase())
         );
       }
 
@@ -69,7 +49,7 @@ const AssetsPage = () => {
   }, [category, search]);
 
   return (
-    <div className="min-h-screen bg-[#050505] text-white pt-32 pb-20 px-6 relative overflow-hidden">
+    <div className="min-h-screen bg-[#050505] text-white pt-32 pb-20 px-6 relative overflow-hidden text-selection-cyan">
       <div 
         className="fixed inset-0 z-0 opacity-10 pointer-events-none bg-cover bg-center grayscale"
         style={{ backgroundImage: `url(${bgTexture})` }}
@@ -158,9 +138,21 @@ const AssetsPage = () => {
                 className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
               >
                 {filteredData.map((item) => (
-                  <CharacterCard key={item.guid} character={{
-                    ...item,
-                    stats: item.stats || { STR: 0, DEX: 0, CON: 0, INT: 0, WIS: 0, CHA: 0 }
+                  <CharacterCard key={item.guid || item._id?.$oid} character={{
+                    guid: item.guid || item._id?.$oid,
+                    characterName: item.name || item.characterName,
+                    characterClass: item.class || item.characterClass,
+                    race: item.race || "",
+                    level: item.level || 0,
+                    stats: item.attributes ? {
+                      STR: item.attributes.str,
+                      DEX: item.attributes.dex,
+                      CON: item.attributes.con,
+                      INT: item.attributes.int,
+                      WIS: item.attributes.wis,
+                      CHA: item.attributes.cha
+                    } : (item.stats || { STR: 0, DEX: 0, CON: 0, INT: 0, WIS: 0, CHA: 0 }),
+                    profilePicture: item.icon || item.profilePicture
                   } as any} />
                 ))}
               </motion.div>
