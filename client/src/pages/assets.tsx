@@ -4,8 +4,8 @@ import { Search, Download, ExternalLink, Zap } from 'lucide-react';
 import { CharacterCard } from '@/components/CharacterCard';
 import bgTexture from '@assets/generated_images/mythos_asset_library_background_texture.png';
 import AssetGallery from '@/components/AssetGallery';
-import characterData from '../../characters.json';
-import spellData from '../../spells.json';
+import characterData from '../characters.json';
+import spellData from '../spells.json';
 
 const AssetsPage = () => {
   const [category, setCategory] = useState('HEROES');
