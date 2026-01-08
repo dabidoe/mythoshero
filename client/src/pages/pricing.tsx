@@ -14,7 +14,7 @@ const plans = [
   },
   {
     name: 'Hero',
-    price: '$19',
+    price: '$3',
     description: 'The sweet spot for active GMs and world builders.',
     features: [
       'Unlimited Forges', 
@@ -31,7 +31,7 @@ const plans = [
   },
   {
     name: 'Legend',
-    price: '$49',
+    price: '$10',
     description: 'For professional creators and publishing studios.',
     features: [
       'Batch Forging', 

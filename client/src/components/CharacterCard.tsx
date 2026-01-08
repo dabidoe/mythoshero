@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'wouter';
 
 interface CharacterStats {
   STR: number;
@@ -69,9 +70,11 @@ export const CharacterCard: React.FC<CharacterCardProps> = ({ character }) => {
           ))}
         </div>
 
-        <button className="w-full py-3 bg-white/5 hover:bg-[#00f0ff] text-white hover:text-black rounded-none text-[10px] font-black uppercase tracking-[0.2em] transition-all duration-300 border border-white/5 hover:border-[#00f0ff] shadow-lg hover:shadow-[#00f0ff]/20">
-          Sync Interface
-        </button>
+        <Link href={`/character-sheet/${character.guid}`}>
+          <button className="w-full py-3 bg-white/5 hover:bg-[#00f0ff] text-white hover:text-black rounded-none text-[10px] font-black uppercase tracking-[0.2em] transition-all duration-300 border border-white/5 hover:border-[#00f0ff] shadow-lg hover:shadow-[#00f0ff]/20">
+            Open Character Sheet
+          </button>
+        </Link>
       </div>
     </motion.div>
   );

@@ -1,6 +1,6 @@
 
   address: '0.0.0.0',
-  port: 3000
+  port: 5000
 This is progress! You successfully changed the code to port 3000, but now we’ve hit the same error on the new port.
 
 The ENOTSUP (Error: Not Supported) on a Mac usually means one of two things:
