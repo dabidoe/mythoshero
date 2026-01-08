@@ -415,63 +415,6 @@
 },
 {
   "_id": {
-    "$oid": "69216cdf50281ebd71151027"
-  },
-  "userId": {
-    "$oid": "69216cae50281ebd71151022"
-  },
-  "name": "Porknealius",
-  "slug": "porknealius-45b75007",
-  "class": "Mage",
-  "race": "Dwarf",
-  "level": 1,
-  "alignment": "Neutral",
-  "icon": "",
-  "profile": {
-    "backstory": "",
-    "behavior": "",
-    "personality": ""
-  },
-  "attributes": {
-    "str": 10,
-    "dex": 10,
-    "con": 10,
-    "int": 10,
-    "wis": 10,
-    "cha": 10
-  },
-  "hp": {
-    "current": 10,
-    "max": 10
-  },
-  "ac": 10,
-  "initiative": 0,
-  "state": "Normal",
-  "isPublic": true,
-  "spells": {
-    "slots": [],
-    "known": []
-  },
-  "inventory": {
-    "weapons": [],
-    "armor": [],
-    "items": []
-  },
-  "temporaryModifiers": [],
-  "passiveTraits": [],
-  "feats": [],
-  "skills": [],
-  "abilities": [],
-  "createdAt": {
-    "$date": "2025-11-22T07:57:19.289Z"
-  },
-  "updatedAt": {
-    "$date": "2025-11-22T07:57:19.289Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
     "$oid": "692464738ee98a01ba8f2fdc"
   },
   "userId": {
@@ -1595,64 +1538,6 @@
   },
   "updatedAt": {
     "$date": "2025-11-26T19:38:16.377Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6928d0e25648a6dce9f6de26"
-  },
-  "userId": {
-    "$oid": "691f08ef96b2af2c7f0a183e"
-  },
-  "name": "My name is dingus",
-  "slug": "my-name-is-dingus-072bf43d",
-  "class": "Arcane Mage",
-  "race": "Moon Elf",
-  "level": 3,
-  "alignment": "Neutral Good",
-  "icon": "",
-  "gallery": [],
-  "profile": {
-    "backstory": "Born under an eclipse in a remote elven observatory, My name is dingus showed an early knack for warping simple spells into strange, brilliant shapes. Their elders considered them a harmless oddity until a burst of arcane insight saved the settlement from a roaming spirit. That moment set them on the mage’s path, determined to refine their chaotic spark into true mastery.",
-    "behavior": "Easily distracted by magical curiosities, often mumbling half-formed incantations while pacing. In danger, their tone sharpens and they snap into precise action.",
-    "personality": "Earnestly quirky, warm-hearted, and prone to overexplaining. Beneath the eccentric exterior lies a disciplined mind eager to prove its arcane worth."
-  },
-  "attributes": {
-    "str": 8,
-    "dex": 14,
-    "con": 13,
-    "int": 17,
-    "wis": 12,
-    "cha": 11
-  },
-  "hp": {
-    "current": 20,
-    "max": 20
-  },
-  "ac": 13,
-  "initiative": 2,
-  "state": "Calm and Focused",
-  "isPublic": false,
-  "spells": {
-    "slots": [],
-    "known": []
-  },
-  "inventory": {
-    "weapons": [],
-    "armor": [],
-    "items": []
-  },
-  "temporaryModifiers": [],
-  "passiveTraits": [],
-  "feats": [],
-  "skills": [],
-  "abilities": [],
-  "createdAt": {
-    "$date": "2025-11-27T22:29:54.585Z"
-  },
-  "updatedAt": {
-    "$date": "2025-11-27T22:31:04.149Z"
   },
   "__v": 0
 },
