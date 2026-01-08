@@ -28,22 +28,31 @@ interface CharacterCardProps {
 const CDN_BASE = "https://statsheet-cdn.b-cdn.net/images/";
 
 export const CharacterCard: React.FC<CharacterCardProps> = ({ character }) => {
-  const imageUrl = character.profilePicture?.startsWith('http') 
-    ? character.profilePicture 
-    : `${CDN_BASE}${character.profilePicture || 'placeholder.png'}`;
+  // Check if profile picture is valid (not a placeholder or junk string)
+  const isValidImage = character.profilePicture &&
+    character.profilePicture.length > 0 &&
+    !character.profilePicture.includes('dsjklfdj') &&
+    !character.profilePicture.includes('dasjkhfd') &&
+    character.profilePicture !== 'placeholder.png';
+
+  const imageUrl = isValidImage
+    ? (character.profilePicture?.startsWith('http')
+        ? character.profilePicture
+        : `${CDN_BASE}${character.profilePicture}`)
+    : 'https://via.placeholder.com/400x600?text=MythOS+Character';
 
   return (
-    <motion.div 
+    <motion.div
       whileHover={{ y: -5 }}
       className="bg-[#121212]/40 backdrop-blur-xl border border-white/5 rounded-none p-0 shadow-2xl group hover:border-[#00f0ff]/30 transition-all duration-500 overflow-hidden relative"
     >
       <div className="aspect-[3/4] relative overflow-hidden bg-black/40">
-        <img 
-          src={imageUrl} 
+        <img
+          src={imageUrl}
           alt={character.characterName}
           className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 opacity-80"
           onError={(e) => {
-            (e.target as HTMLImageElement).src = 'https://via.placeholder.com/400x600?text=MythOS+Asset';
+            (e.target as HTMLImageElement).src = 'https://via.placeholder.com/400x600?text=Character';
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-transparent opacity-90" />

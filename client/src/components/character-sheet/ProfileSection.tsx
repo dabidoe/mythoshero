@@ -32,7 +32,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
       </h3>
 
       {/* Character portrait */}
-      {icon && (
+      {icon && icon.length > 0 && !icon.includes('dsjklfdj') && !icon.includes('dasjkhfd') && (
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -44,7 +44,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
             alt={name}
             className="relative w-full aspect-square rounded-xl object-cover border border-white/10"
             onError={(e) => {
-              (e.target as HTMLImageElement).src = 'https://via.placeholder.com/400?text=Character';
+              (e.target as HTMLImageElement).style.display = 'none';
             }}
           />
         </motion.div>

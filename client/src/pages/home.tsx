@@ -51,7 +51,7 @@ export default function Home() {
                 </div>
               ))}
             </div>
-            <p>Joined by 10,000+ storytellers</p>
+            <p>Joined by 10,000+ cool ass bros</p>
           </div>
         </motion.div>
 

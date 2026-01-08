@@ -2,10 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Search, Download, ExternalLink, Zap } from 'lucide-react';
 import { CharacterCard } from '@/components/CharacterCard';
+import { SpellCard } from '@/components/SpellCard';
+import { TokenCard } from '@/components/TokenCard';
 import bgTexture from '@assets/generated_images/mythos_asset_library_background_texture.png';
 import AssetGallery from '@/components/AssetGallery';
 import characterData from '../characters.json';
 import spellData from '../spells.json';
+import npcTokens from '../tokens/npcs/npcs.json';
+import beastiaryTokens from '../tokens/beastiary/beastiary.json';
 
 const AssetsPage = () => {
   const [category, setCategory] = useState('HEROES');
@@ -22,23 +26,19 @@ const AssetsPage = () => {
       } else if (category === 'CREATURES') {
         data = characterData.filter((c: any) => c.characterType === "NPC" || c.level === 0);
       } else if (category === 'ARTIFACTS') {
-        data = []; 
+        data = [];
       } else if (category === 'SPELLS') {
-        data = spellData.map((s: any) => ({
-          guid: s._id?.$oid || s.name,
-          characterName: s.name,
-          characterClass: s.school || 'Spell',
-          race: `Lvl ${s.level}`,
-          level: s.level,
-          stats: { STR: 0, DEX: 0, CON: 0, INT: 0, WIS: 0, CHA: 0 },
-          profilePicture: s.icon || 'mythos_asset_library_background_texture.png',
-          class: s.school
-        }));
+        data = spellData;
+      } else if (category === 'TOKENS') {
+        data = [
+          ...(Array.isArray(npcTokens) ? npcTokens : []),
+          ...(Array.isArray(beastiaryTokens) ? beastiaryTokens : [])
+        ];
       }
 
       if (search) {
-        data = data.filter(item => 
-          (item.characterName || item.name || "").toLowerCase().includes(search.toLowerCase())
+        data = data.filter(item =>
+          (item.name || item.characterName || "").toLowerCase().includes(search.toLowerCase())
         );
       }
 
@@ -100,7 +100,7 @@ const AssetsPage = () => {
             </div>
 
             <div className="flex gap-4 mb-16 overflow-x-auto pb-4 scrollbar-hide border-b border-white/5">
-              {['HEROES', 'CREATURES', 'ARTIFACTS', 'SPELLS'].map((cat) => (
+              {['HEROES', 'CREATURES', 'TOKENS', 'SPELLS', 'ARTIFACTS'].map((cat) => (
                 <button
                   key={cat}
                   onClick={() => setCategory(cat)}
@@ -110,7 +110,7 @@ const AssetsPage = () => {
                 >
                   {cat}
                   {category === cat && (
-                    <motion.div 
+                    <motion.div
                       layoutId="activeTab"
                       className="absolute bottom-0 left-0 right-0 h-[2px] bg-[#00f0ff] shadow-[0_0_10px_#00f0ff]"
                     />
@@ -149,24 +149,39 @@ const AssetsPage = () => {
                     transition={{ duration: 0.3 }}
                     className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
                   >
-                    {filteredData.map((item) => (
-                      <CharacterCard key={item.guid || item._id?.$oid} character={{
-                        guid: item.guid || item._id?.$oid,
-                        characterName: item.name || item.characterName,
-                        characterClass: item.class || item.characterClass,
-                        race: item.race || "",
-                        level: item.level || 0,
-                        stats: item.attributes ? {
-                          STR: item.attributes.str,
-                          DEX: item.attributes.dex,
-                          CON: item.attributes.con,
-                          INT: item.attributes.int,
-                          WIS: item.attributes.wis,
-                          CHA: item.attributes.cha
-                        } : (item.stats || { STR: 0, DEX: 0, CON: 0, INT: 0, WIS: 0, CHA: 0 }),
-                        profilePicture: item.icon || item.profilePicture
-                      } as any} />
-                    ))}
+                    {filteredData.map((item) => {
+                      const key = item.tokenId || item.guid || item._id?.$oid || item.name;
+
+                      // Render appropriate card based on category
+                      if (category === 'SPELLS') {
+                        return <SpellCard key={key} spell={item} />;
+                      } else if (category === 'TOKENS') {
+                        return <TokenCard key={key} token={item} />;
+                      } else {
+                        // HEROES, CREATURES, ARTIFACTS use CharacterCard
+                        return (
+                          <CharacterCard
+                            key={key}
+                            character={{
+                              guid: item.guid || item._id?.$oid,
+                              characterName: item.name || item.characterName,
+                              characterClass: item.class || item.characterClass,
+                              race: item.race || "",
+                              level: item.level || 0,
+                              stats: item.attributes ? {
+                                STR: item.attributes.str,
+                                DEX: item.attributes.dex,
+                                CON: item.attributes.con,
+                                INT: item.attributes.int,
+                                WIS: item.attributes.wis,
+                                CHA: item.attributes.cha
+                              } : (item.stats || { STR: 0, DEX: 0, CON: 0, INT: 0, WIS: 0, CHA: 0 }),
+                              profilePicture: item.icon || item.profilePicture
+                            } as any}
+                          />
+                        );
+                      }
+                    })}
                   </motion.div>
                 )}
               </AnimatePresence>

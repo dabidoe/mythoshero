@@ -146,18 +146,18 @@ export default function CharacterSheetPage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
           {/* Left Column */}
           <div className="lg:col-span-3 space-y-6">
+            <CombatStats
+              hp={character.hp}
+              ac={character.ac}
+              initiative={character.initiative}
+              onRoll={roll}
+            />
             <StatBlock
               attributes={character.attributes}
               onRoll={roll}
             />
             <SkillsPanel
               skills={character.skills}
-              onRoll={roll}
-            />
-            <CombatStats
-              hp={character.hp}
-              ac={character.ac}
-              initiative={character.initiative}
               onRoll={roll}
             />
           </div>

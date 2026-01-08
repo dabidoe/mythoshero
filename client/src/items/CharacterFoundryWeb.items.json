@@ -1,0 +1,317 @@
+[{
+  "_id": {
+    "$oid": "6919ed3720f6023d6a739891"
+  },
+  "userId": {
+    "$oid": "691394441c2cd702c2a18997"
+  },
+  "name": "Broadsword",
+  "type": "weapon",
+  "itemCategory": "weapons",
+  "quantity": 0,
+  "damage": "1d8 slashing",
+  "acBonus": 0,
+  "weight": 4,
+  "value": 1200,
+  "description": "A curved blade forged to catch crosswinds, crackling faintly with stormy energy.",
+  "isPublic": true,
+  "createdAt": {
+    "$date": "2025-11-16T15:26:47.860Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-19T05:59:52.634Z"
+  },
+  "__v": 0,
+  "icon": "https://statsheet-cdn.b-cdn.net/images/runware-1763531882421.png",
+  "weaponClass": ""
+},
+{
+  "_id": {
+    "$oid": "691a1a3473c51d1ec86ca862"
+  },
+  "userId": {
+    "$oid": "691f08ef96b2af2c7f0a183e"
+  },
+  "name": "Starbreaker Scythe",
+  "type": "weapon",
+  "itemCategory": "weapons",
+  "quantity": 1,
+  "damage": "1d10 radiant",
+  "acBonus": 0,
+  "weight": 4,
+  "value": 120,
+  "description": "A crescent-forged polearm that hums with imprisoned starlight, slicing with a cold, radiant shimmer.",
+  "isPublic": true,
+  "createdAt": {
+    "$date": "2025-11-16T18:38:44.805Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-25T07:02:30.485Z"
+  },
+  "__v": 0,
+  "icon": "https://statsheet-cdn.b-cdn.net/images/runware-1763531834699.png",
+  "weaponClass": ""
+},
+{
+  "_id": {
+    "$oid": "691a206652c3885348df9b2f"
+  },
+  "userId": {
+    "$oid": "691394441c2cd702c2a18997"
+  },
+  "name": "Verdant Channeling Rod",
+  "type": "weapon",
+  "itemCategory": "weapons",
+  "quantity": 1,
+  "damage": "1d8 bludgeoning",
+  "acBonus": 0,
+  "weight": 3,
+  "value": 75,
+  "description": "A living wood staff that hums with druidic power, releasing bursts of natural force when swung.",
+  "isPublic": true,
+  "icon": "https://statsheet-cdn.b-cdn.net/images/runware-1763531849196.png",
+  "createdAt": {
+    "$date": "2025-11-16T19:05:10.696Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-19T05:57:34.902Z"
+  },
+  "__v": 0,
+  "weaponClass": ""
+},
+{
+  "_id": {
+    "$oid": "691d5d2df5cbfd82a0d194e6"
+  },
+  "userId": {
+    "$oid": "691394441c2cd702c2a18997"
+  },
+  "name": "Firesword",
+  "type": "weapon",
+  "itemCategory": "weapons",
+  "quantity": 1,
+  "damage": "1d8 fire",
+  "weaponClass": "",
+  "acBonus": 0,
+  "weight": 4,
+  "value": 250,
+  "description": "A curved blade that erupts in brief flares of orange flame with every swing.",
+  "isPublic": true,
+  "icon": "https://statsheet-cdn.b-cdn.net/images/runware-1763532336181.png",
+  "createdAt": {
+    "$date": "2025-11-19T06:01:17.844Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-19T06:05:41.793Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "691d7d7f052438e2e4e9547c"
+  },
+  "userId": {
+    "$oid": "691394441c2cd702c2a18997"
+  },
+  "name": "Magic Plate Armor",
+  "type": "armor",
+  "itemCategory": "armor",
+  "quantity": 1,
+  "damage": "",
+  "weaponClass": "",
+  "acBonus": 6,
+  "weight": 55,
+  "value": 4500,
+  "description": "A masterwork shell of interlocking mythril plates that shimmer with warding runes. It stiffens against incoming blows, granting stalwart protection to its wearer.",
+  "isPublic": true,
+  "icon": "https://statsheet-cdn.b-cdn.net/images/runware-1763540342635.png",
+  "createdAt": {
+    "$date": "2025-11-19T08:19:11.331Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-19T08:19:11.331Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69249c1ee83d14cb80858de9"
+  },
+  "userId": {
+    "$oid": "691f08ef96b2af2c7f0a183e"
+  },
+  "name": "Arcane Focus",
+  "type": "armor",
+  "itemCategory": "armor",
+  "quantity": 1,
+  "damage": "",
+  "acBonus": 2,
+  "weight": 15,
+  "value": 450,
+  "description": "A radiant cuirass forged from fallen meteor alloy that shimmers with astral motes. It subtly shifts its plates to catch incoming blows before they land.",
+  "isPublic": true,
+  "icon": "https://statsheet-cdn.b-cdn.net/images/20a4c5da7e4136cc3bac49432c189df4382754337edd316549b31c40166d7914.png",
+  "createdAt": {
+    "$date": "2025-11-24T17:55:42.245Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-25T07:02:30.485Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6950480d5648a6dce9f6f0b4"
+  },
+  "userId": {
+    "$oid": "691f08ef96b2af2c7f0a183e"
+  },
+  "name": "Minotaurs Greataxe",
+  "type": "weapon",
+  "itemCategory": "Greataxe",
+  "quantity": 1,
+  "damage": "2d6 slashing",
+  "acBonus": 0,
+  "weight": 5,
+  "value": 150,
+  "description": "A massive greataxe forged from maze-forged iron, humming with the rage of ancient hunters.",
+  "isPublic": false,
+  "icon": "https://statsheet-cdn.b-cdn.net/images/runware-1766868967026.png",
+  "createdAt": {
+    "$date": "2025-12-27T20:56:45.941Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-27T20:56:45.941Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695048355648a6dce9f6f0d0"
+  },
+  "userId": {
+    "$oid": "691f08ef96b2af2c7f0a183e"
+  },
+  "name": "Stormhide Jerkin",
+  "type": "gear",
+  "itemCategory": "",
+  "quantity": 1,
+  "damage": "",
+  "acBonus": 0,
+  "weight": 8,
+  "value": 75,
+  "description": "A supple leather jerkin infused with crackling runes that stiffen against incoming blows.",
+  "isPublic": false,
+  "icon": "https://statsheet-cdn.b-cdn.net/images/runware-1766869033730.png",
+  "createdAt": {
+    "$date": "2025-12-27T20:57:25.957Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-27T20:57:25.957Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "695049a35648a6dce9f6f1d3"
+  },
+  "userId": {
+    "$oid": "691f08ef96b2af2c7f0a183e"
+  },
+  "name": "Iron Club",
+  "type": "weapon",
+  "itemCategory": "",
+  "quantity": 1,
+  "damage": "",
+  "acBonus": 0,
+  "weight": 0,
+  "value": 0,
+  "description": "A heavy, rune-scored hammer built to shatter shields and send foes reeling.",
+  "isPublic": false,
+  "icon": "https://statsheet-cdn.b-cdn.net/images/5fbc36059dc4a8a0469fc05cd71cc4aceb3dd70aad6e79b4da6d6b0f6bc99eb2.png",
+  "createdAt": {
+    "$date": "2025-12-27T21:03:31.685Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-27T21:03:31.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69504adf5648a6dce9f6f282"
+  },
+  "userId": {
+    "$oid": "691f08ef96b2af2c7f0a183e"
+  },
+  "name": "Whisperwind Dagger",
+  "type": "weapon",
+  "itemCategory": "",
+  "quantity": 1,
+  "damage": "",
+  "acBonus": 0,
+  "weight": 0,
+  "value": 0,
+  "description": "A smoky-gray blade that flickers like a dying ember, whispering secrets when drawn. Its unnerving balance makes it strike faster than sight.",
+  "isPublic": false,
+  "icon": "https://statsheet-cdn.b-cdn.net/images/0d006472-6805-4f90-85af-9d093e419969.png",
+  "createdAt": {
+    "$date": "2025-12-27T21:08:47.327Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-27T21:08:47.327Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69504ae15648a6dce9f6f286"
+  },
+  "userId": {
+    "$oid": "691f08ef96b2af2c7f0a183e"
+  },
+  "name": "Mighty Turtle Medallion",
+  "type": "gear",
+  "itemCategory": "",
+  "quantity": 1,
+  "damage": "",
+  "acBonus": 0,
+  "weight": 0,
+  "value": 0,
+  "description": "A palm-sized charm carved from mythic tortoise shell that shimmers with protective runes. When worn, it radiates a steady warding aura that blunts incoming harm.",
+  "isPublic": false,
+  "icon": "https://statsheet-cdn.b-cdn.net/images/8bf6902c-a09b-4645-aba8-9adc8817e968.png",
+  "createdAt": {
+    "$date": "2025-12-27T21:08:49.454Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-27T21:08:49.454Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69504ae35648a6dce9f6f28a"
+  },
+  "userId": {
+    "$oid": "691f08ef96b2af2c7f0a183e"
+  },
+  "name": "Whirling Arcane Top",
+  "type": "gear",
+  "itemCategory": "",
+  "quantity": 1,
+  "damage": "",
+  "acBonus": 0,
+  "weight": 0,
+  "value": 0,
+  "description": "This faintly humming sphere channels raw arcane currents, pulsing brighter as spells are cast through it.",
+  "isPublic": false,
+  "icon": "https://statsheet-cdn.b-cdn.net/images/10721678-2a00-46de-ad15-9106410992c6.png",
+  "createdAt": {
+    "$date": "2025-12-27T21:08:51.758Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-27T21:08:51.758Z"
+  },
+  "__v": 0
+}]
