@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'wouter';
 import kealenImg from '@assets/generated_images/cinematic_fantasy_knight_character_portrait.png';
 import shadowImg from '@assets/generated_images/shadow_weaver_mage_portrait.png';
 import swordImg from '@assets/generated_images/the_iron_oath_artifact_sword.png';
@@ -32,12 +33,14 @@ const AssetGallery = () => {
               interactive lore, and seamless integration.
             </p>
           </motion.div>
-          <motion.button 
-            whileHover={{ x: 5 }}
-            className="text-cyan-400 font-bold hover:text-cyan-300 transition-colors text-sm uppercase tracking-widest flex items-center gap-2 group"
-          >
-            Browse All Assets <span className="group-hover:translate-x-1 transition-transform">→</span>
-          </motion.button>
+          <Link href="/assets">
+            <motion.span
+              whileHover={{ x: 5 }}
+              className="text-cyan-400 font-bold hover:text-cyan-300 transition-colors text-sm uppercase tracking-widest flex items-center gap-2 group cursor-pointer"
+            >
+              Browse All Assets <span className="group-hover:translate-x-1 transition-transform">→</span>
+            </motion.span>
+          </Link>
         </div>
 
         {/* The Netflix-Style Grid */}
@@ -85,9 +88,11 @@ const AssetGallery = () => {
               <div className="p-6 relative">
                 <p className="text-[10px] text-cyan-500/60 font-mono uppercase tracking-widest mb-2">{asset.type}</p>
                 <h3 className="text-2xl font-bold text-white font-heading group-hover:text-cyan-400 transition-colors">{asset.name}</h3>
-                <button className="mt-6 w-full py-3 bg-white/5 hover:bg-cyan-500 hover:text-black text-white text-xs font-bold rounded-lg transition-all duration-300 border border-white/5 hover:border-cyan-500 transform active:scale-95">
-                  VIEW ASSET SPECS
-                </button>
+                <Link href="/assets">
+                  <button className="mt-6 w-full py-3 bg-white/5 hover:bg-cyan-500 hover:text-black text-white text-xs font-bold rounded-lg transition-all duration-300 border border-white/5 hover:border-cyan-500 transform active:scale-95">
+                    VIEW ASSET SPECS
+                  </button>
+                </Link>
               </div>
             </motion.div>
           ))}

@@ -1,0 +1,33 @@
+{
+  "_id": {
+    "$oid": "6964199e362e1aeda9c36000"
+  },
+  "name": "Aura Of Vitality",
+  "level": 3,
+  "flavorText": "Healing energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. You can use a bonus action to cause one creature in the aura (including you) to regain 2d6 hit points.",
+  "description": "Healing energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. You can use a bonus action to cause one creature in the aura (including you) to regain 2d6 hit points.",
+  "school": "Evocation",
+  "classes": [
+    "paladin"
+  ],
+  "ritual": false,
+  "castingTime": "1 action",
+  "range": "Self (30-foot radius)",
+  "components": "V",
+  "duration": "Concentration, up to 1 minute",
+  "componentsDetail": {
+    "verbal": true,
+    "somatic": false,
+    "material": false,
+    "materialsNeeded": []
+  },
+  "higherLevels": null,
+  "icon": null,
+  "iconStatus": "placeholder",
+  "video": null,
+  "damage": "2d6 healing",
+  "tags": [
+    "paladin",
+    "level3"
+  ]
+}

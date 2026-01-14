@@ -20,7 +20,7 @@ export default function Home() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <h1 className="text-6xl lg:text-8xl font-extrabold font-heading leading-tight mb-6">
+          <h1 className="text-4xl sm:text-6xl lg:text-8xl font-extrabold font-heading leading-tight mb-6">
             Forge Legends.<br/>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-cyan-200 to-blue-600 animate-pulse">
               Build Worlds.
@@ -32,14 +32,17 @@ export default function Home() {
             <span className="text-cyan-400">Stop generating—start crafting.</span>
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <button 
-              className="bg-cyan-600 hover:bg-cyan-500 text-white px-8 py-4 rounded-lg font-bold text-lg shadow-[0_0_30px_rgba(8,145,178,0.4)] hover:shadow-[0_0_40px_rgba(34,211,238,0.6)] transition-all duration-300 transform hover:-translate-y-1"
+            <a
+              href="https://app.mythos.quest"
+              className="bg-cyan-600 hover:bg-cyan-500 text-white px-8 py-4 rounded-lg font-bold text-lg shadow-[0_0_30px_rgba(8,145,178,0.4)] hover:shadow-[0_0_40px_rgba(34,211,238,0.6)] transition-all duration-300 transform hover:-translate-y-1 text-center"
             >
-              Start Your Quest
-            </button>
-            <button className="group border border-white/20 hover:border-cyan-500/50 hover:bg-cyan-950/30 px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300">
-              <span className="group-hover:text-cyan-400 transition-colors">View Asset Gallery</span>
-            </button>
+              Try the App
+            </a>
+            <Link href="/assets">
+              <button className="group border border-white/20 hover:border-cyan-500/50 hover:bg-cyan-950/30 px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 w-full">
+                <span className="group-hover:text-cyan-400 transition-colors">View Asset Gallery</span>
+              </button>
+            </Link>
           </div>
           
           <div className="mt-12 flex items-center gap-4 text-sm text-gray-500">
@@ -73,18 +76,18 @@ export default function Home() {
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent z-10"></div>
             
             {/* UI Overlay Elements */}
-            <div className="absolute top-6 right-6 z-20 flex gap-2">
-              <div className="bg-black/50 backdrop-blur-md px-3 py-1 rounded text-xs font-mono text-cyan-400 border border-cyan-900/50">
+            <div className="absolute top-3 right-3 sm:top-6 sm:right-6 z-20 flex gap-2">
+              <div className="bg-black/50 backdrop-blur-md px-2 py-1 sm:px-3 rounded text-[10px] sm:text-xs font-mono text-cyan-400 border border-cyan-900/50">
                 ASSET_ID: KX-902
               </div>
-              <div className="bg-cyan-500/10 backdrop-blur-md px-3 py-1 rounded text-xs font-mono text-cyan-300 border border-cyan-500/20 animate-pulse">
+              <div className="hidden sm:block bg-cyan-500/10 backdrop-blur-md px-3 py-1 rounded text-xs font-mono text-cyan-300 border border-cyan-500/20 animate-pulse">
                 LIVE RENDER
               </div>
             </div>
 
-            <div className="absolute bottom-6 left-6 z-20 max-w-md">
-              <p className="text-xs font-mono uppercase tracking-widest text-cyan-400 mb-2">Featured Asset</p>
-              <h3 className="text-3xl font-bold font-heading text-white mb-2">Sir Kealen, The Iron Oath</h3>
+            <div className="absolute bottom-3 left-3 sm:bottom-6 sm:left-6 z-20 max-w-md">
+              <p className="text-[10px] sm:text-xs font-mono uppercase tracking-widest text-cyan-400 mb-1 sm:mb-2">Featured Asset</p>
+              <h3 className="text-xl sm:text-3xl font-bold font-heading text-white mb-2">Sir Kealen, The Iron Oath</h3>
               <div className="flex gap-2">
                 <span className="text-xs bg-white/10 px-2 py-1 rounded text-gray-300">Human</span>
                 <span className="text-xs bg-white/10 px-2 py-1 rounded text-gray-300">Paladin</span>
@@ -104,14 +107,13 @@ export default function Home() {
       <AssetGallery />
 
       {/* Footer / Brands */}
-      <footer className="border-t border-white/5 py-12">
-         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center opacity-40 hover:opacity-100 transition-opacity duration-500">
-           <div className="text-sm text-gray-500 mb-4 md:mb-0">TRUSTED BY WORLD BUILDERS</div>
-           <div className="flex gap-8 grayscale hover:grayscale-0 transition-all">
-             {/* Mock Logos */}
-             <div className="font-heading font-bold text-xl">D&D BEYOND</div>
-             <div className="font-heading font-bold text-xl">ROLL20</div>
-             <div className="font-heading font-bold text-xl">FOUNDRY</div>
+      <footer className="border-t border-white/5 py-8 sm:py-12">
+         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6 opacity-40 hover:opacity-100 transition-opacity duration-500">
+           <div className="text-xs sm:text-sm text-gray-500 text-center md:text-left">TRUSTED BY WORLD BUILDERS</div>
+           <div className="flex flex-wrap justify-center gap-4 sm:gap-8 grayscale hover:grayscale-0 transition-all">
+             <div className="font-heading font-bold text-sm sm:text-xl">D&D BEYOND</div>
+             <div className="font-heading font-bold text-sm sm:text-xl">ROLL20</div>
+             <div className="font-heading font-bold text-sm sm:text-xl">FOUNDRY</div>
            </div>
          </div>
       </footer>

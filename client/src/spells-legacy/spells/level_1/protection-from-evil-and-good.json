@@ -1,0 +1,30 @@
+{
+  "_id": {
+    "$oid": "6954962e5648a6dce9f6f921"
+  },
+  "name": "Protection from Evil and Good",
+  "level": 1,
+  "description": "You cloak a willing creature in shimmering ward-light imperceptible to all but you. For the duration, the target gains advantage on saving throws against being charmed, frightened, or possessed. The first time each round a creature targets the warded ally with an attack or harmful spell, the aggressor must succeed on a Wisdom save or have the effect fizzle harmlessly. The aegis fades early if the target strikes a creature or forces a hostile saving throw.",
+  "castingTime": "1 action",
+  "range": "Touch",
+  "components": "V, S, M (a sliver of moon-glass)",
+  "duration": "Concentration, up to 10 minutes",
+  "damage": "None",
+  "school": "Abjuration",
+  "icon": "https://statsheet-cdn.b-cdn.net/images/1126edf8-0a07-4af8-bbd3-7ee145cdc9ad.png",
+  "iconStatus": "ready",
+  "iconLayers": [
+    [
+      "1126edf8-0a07-4af8-bbd3-7ee145cdc9ad${\"position\":\"0.5,0.5\",\"rotation\":0.0,\"scale\":\"1,1\",\"crop\":\"0,0,1,1\",\"hide\":false,\"guid\":\"36e3e53b-c001-4f83-adb3-ec0ce13d55e1\"}"
+    ],
+    [
+      "c3b37257-8cba-48bc-8fe0-99ae5d097053${\"position\":\"0.5,0.5\",\"rotation\":0.0,\"scale\":\"1,1\",\"crop\":\"0,0,1,1\",\"hide\":false,\"guid\":\"c60ed223-c266-42c2-9757-430207e4f59a\"}"
+    ],
+    [
+      "73ec20a1-2f09-4ea8-9c45-6c90959b18e4${\"position\":\"0.5,0.5\",\"rotation\":0.0,\"scale\":\"1,1\",\"crop\":\"0,0,1,1\",\"hide\":false,\"guid\":\"1437d570-6b0e-450d-b75e-304d969a3aec\"}"
+    ],
+    [
+      "a2418553-9ee1-4887-9ace-8add81c5dc1d${\"position\":\"0.5,0.5\",\"rotation\":0.0,\"scale\":\"1,1\",\"crop\":\"0,0,1,1\",\"hide\":false,\"guid\":\"d1d9407d-3292-4db8-86cb-516a7c158849\"}"
+    ]
+  ]
+}
